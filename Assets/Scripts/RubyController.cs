@@ -20,6 +20,7 @@ public class RubyController : MonoBehaviour
     Animator animator;
     Vector2 lookDirection = new Vector2(1, 0);
 
+    // Start is called before the first frame update
     void Start()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
@@ -27,6 +28,8 @@ public class RubyController : MonoBehaviour
 
         currentHealth = maxHealth;
     }
+
+    // Update is called once per frame
     void Update()
     {
         float horizontal = Input.GetAxis("x");
@@ -76,7 +79,7 @@ public class RubyController : MonoBehaviour
 
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
 
-        Debug.Log(currentHealth + "/" + maxHealth);
+        UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
     }
 
     void Launch()
