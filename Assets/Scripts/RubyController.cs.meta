@@ -6,6 +6,9 @@ MonoImporter:
   defaultReferences:
   - projectilePrefab: {fileID: 5783722822965705856, guid: d2dba428e4d38415f9fe8f3a12d28000,
       type: 3}
+  - throwSound: {fileID: 8300000, guid: b2edfd40873655249ba0e01a5cf705be, type: 3}
+  - hitSound: {fileID: 8300000, guid: 9b1bb1f450b7d444fa4a8019d13519a7, type: 3}
+  - audioSource: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

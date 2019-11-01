@@ -20,6 +20,7 @@ public class EnemyController : MonoBehaviour
         timer = changeTime;
         animator = GetComponent<Animator>();
     }
+
     void Update()
     {
         if (!broken)
@@ -63,6 +64,7 @@ public class EnemyController : MonoBehaviour
             player.ChangeHealth(-1);
         }
     }
+
     public void Fix()
     {
         broken = false;
